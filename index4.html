@@ -136,6 +136,17 @@
       sum1(12, 4, 5);
       console.log("***");
       //fibonachi
+      function fibonatchi(num) {
+        if (num == 0 || num == 1) {
+          console.log(num);
+        } else {
+          let fibo = [1, 1];
+          for (let i = 2; i < 15; i++) {
+            fibo[i] = fibo[i - 2] + fibo[i - 1];
+          }
+        }
+        console.log(fibo[num - 1]);
+      }
       let fibo = [1, 1];
       let i = 2;
       for (let i = 2; i < 15; i++) {
